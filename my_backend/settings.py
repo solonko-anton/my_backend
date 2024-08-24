@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'auth_app',
     'corsheaders',
     'rest_framework_simplejwt.token_blacklist',
+    'items_app',
 ]
 
 MIDDLEWARE = [
@@ -122,7 +123,7 @@ REST_FRAMEWORK = {
         #'rest_framework.authentication.TokenAuthentication',
         #'rest_framework.authentication.SessionAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ]
+    ],
 }
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
